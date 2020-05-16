@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+/* line 10, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.red {
+  background-color: red; }
+
+/* line 14, ../../../PROJECTS/official-portfolio/scss/main.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 18, ../../../PROJECTS/official-portfolio/scss/main.scss */
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box; }
+
+/* line 24, ../../../PROJECTS/official-portfolio/scss/main.scss */
+*:focus {
+  outline: 0; }
+
+/* line 27, ../../../PROJECTS/official-portfolio/scss/main.scss */
+html {
+  scroll-behavior: smooth; }
+
+/* line 31, ../../../PROJECTS/official-portfolio/scss/main.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; }
+
+/*
+##### global
+*/
+/* line 41, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+/* line 46, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.margin {
+  margin: 1em; }
+
+/* line 50, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.ml {
+  margin-left: 1em; }
+
+/* line 54, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.mr {
+  margin-right: 1em; }
+
+/* line 57, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.mt {
+  margin-top: 1em; }
+
+/* line 61, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.mb {
+  margin-bottom: 1em; }
+
+/* line 64, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.my {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+/* line 68, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.mx {
+  margin-left: 1em;
+  margin-right: 1em; }
+
+/* line 73, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.padding {
+  padding: 1em; }
+
+/* line 77, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.pl {
+  padding-left: 1em; }
+
+/* line 81, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.pr {
+  padding-right: 1em; }
+
+/* line 84, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.pt {
+  padding-top: 1em; }
+
+/* line 88, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.pb {
+  padding-bottom: 1em; }
+
+/* line 91, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.px {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+/* line 95, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.py {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+/* line 100, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.align-center {
+  text-align: center; }
+
+/* line 104, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.align-right {
+  text-align: right; }
+
+/* line 108, ../../../PROJECTS/official-portfolio/scss/main.scss */
+li {
+  line-height: 2em; }
+
+/* line 112, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.section-title {
+  font-size: 3rem;
+  font-weight: 100;
+  color: #002884;
+  margin-top: 4vw; }
+
+/* line 119, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.nav-list.active > .nav-link::after {
+  transform: scaleX(1); }
+
+/*
+##### Typography
+*/
+/* line 126, ../../../PROJECTS/official-portfolio/scss/main.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0;
+  text-align: inherit;
+  font-weight: lighter;
+  letter-spacing: -0.0415625em;
+  margin: 2rem 0 1.6rem; }
+
+/* line 142, ../../../PROJECTS/official-portfolio/scss/main.scss */
+h1 {
+  font-size: 3.5rem; }
+
+/* line 145, ../../../PROJECTS/official-portfolio/scss/main.scss */
+h2 {
+  font-size: 2.5rem;
+  font-weight: lighter; }
+
+/* line 149, ../../../PROJECTS/official-portfolio/scss/main.scss */
+a {
+  text-decoration: inherit; }
+
+/* line 152, ../../../PROJECTS/official-portfolio/scss/main.scss */
+p {
+  line-height: inherit; }
+
+/* line 156, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.call-to-action {
+  font-weight: bolder;
+  border-radius: 3px;
+  background-color: none;
+  transition: background-color 250ms ease-in-out;
+  border: 2px solid #ffffff;
+  transition: border 250ms ease-in-out;
+  color: #ffffff;
+  padding: 1em 2em;
+  text-decoration: none; }
+  /* line 168, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .call-to-action:hover {
+    background-color: #757ce8;
+    border: 3px solid #ffffff;
+    transition: background-color 250ms ease-in-out;
+    transition: border 250ms ease-in-out;
+    color: var(--clr-white); }
+  /* line 175, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .call-to-action:focus {
+    box-shadow: inset 0 0 0 1px white;
+    border: 3px solid #757ce8;
+    transition: box-shadow 250ms ease;
+    transition: border 250ms ease; }
+
+/* line 183, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.hero {
+  height: 100vh;
+  background-color: #002884;
+  background-image: url("../assets/images/hal-gatewood-Pr578ZCufII-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  color: #ffffff; }
+  /* line 192, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .hero .hero-inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    letter-spacing: 2px; }
+    /* line 201, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    .hero .hero-inner .hero-image-container {
+      width: 100px; }
+      /* line 204, ../../../PROJECTS/official-portfolio/scss/main.scss */
+      .hero .hero-inner .hero-image-container img {
+        width: 100%;
+        clip-path: circle(50% at 50% 50%); }
+    /* line 209, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    .hero .hero-inner .user-name {
+      margin-top: 0;
+      margin-bottom: 0; }
+    /* line 213, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    .hero .hero-inner .designation {
+      margin-bottom: 1.5em; }
+    /* line 216, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    .hero .hero-inner .intro {
+      line-height: 1.5;
+      width: 90%;
+      margin: 0 auto;
+      font-size: 1.2rem; }
+    /* line 223, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    .hero .hero-inner .social-icons {
+      position: absolute;
+      display: flex;
+      bottom: 0;
+      left: 0;
+      list-style: none; }
+      /* line 229, ../../../PROJECTS/official-portfolio/scss/main.scss */
+      .hero .hero-inner .social-icons li {
+        margin-right: 2em;
+        margin-bottom: 1.3em; }
+      /* line 233, ../../../PROJECTS/official-portfolio/scss/main.scss */
+      .hero .hero-inner .social-icons a {
+        text-decoration: none;
+        color: #757ce8; }
+        /* line 236, ../../../PROJECTS/official-portfolio/scss/main.scss */
+        .hero .hero-inner .social-icons a:hover, .hero .hero-inner .social-icons a:focus {
+          color: #3f50b5; }
+
+/* line 245, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#main-navigation {
+  background-color: #ffffff;
+  z-index: 3; }
+
+/* line 249, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.main-nav {
+  display: grid;
+  grid-template-areas: "brand-logo brand-logo menu-icon" "nav-tab nav-tab nav-tab"; }
+
+/* line 254, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+/* line 260, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.brand-logo {
+  grid-area: brand-logo;
+  display: grid;
+  justify-content: start;
+  align-items: center; }
+
+/* line 272, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.nav-tab {
+  grid-area: nav-tab;
+  background-color: #002884;
+  list-style: none;
+  text-decoration: none;
+  display: none; }
+  /* line 280, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .nav-tab .nav-link::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #002884;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: right; }
+  /* line 290, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .nav-tab .nav-link:hover::after, .nav-tab .nav-link:focus::after {
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+    transform-origin: left; }
+  /* line 298, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .nav-tab .nav-link {
+    color: #ffffff; }
+
+/* line 303, ../../../PROJECTS/official-portfolio/scss/main.scss */
+.menu-icon {
+  grid-area: menu-icon;
+  display: grid;
+  justify-content: end;
+  align-items: center;
+  color: #002884; }
+
+/* line 311, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#about-section {
+  line-height: 1.5; }
+  /* line 314, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  #about-section .provisions dd {
+    margin-top: 1em; }
+  /* line 317, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  #about-section .provisions dd::before {
+    content: "\f1ce";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    margin-right: 0.6em; }
+  /* line 325, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  #about-section .tool-icon {
+    display: flex;
+    align-items: center;
+    list-style: none; }
+    /* line 329, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #about-section .tool-icon li {
+      margin-right: 0.6em;
+      font-size: 1.5rem; }
+    /* line 334, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #about-section .tool-icon .fa-figma {
+      color: #f24e1e; }
+    /* line 338, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #about-section .tool-icon .fa-html5 {
+      color: #e34e26; }
+    /* line 342, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #about-section .tool-icon .fa-css3-alt {
+      color: #2196f3; }
+    /* line 346, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #about-section .tool-icon .fa-js {
+      color: #d4b830; }
+    /* line 350, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #about-section .tool-icon .fa-bootstrap {
+      color: #563d7c; }
+    /* line 354, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #about-section .tool-icon .fa-angular {
+      color: #e23237; }
+    /* line 358, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #about-section .tool-icon .fa-node-js {
+      color: #689f63; }
+
+/* line 365, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#works .works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px; }
+  /* line 370, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  #works .works-grid div:nth-child(even) {
+    background-color: red; }
+  /* line 373, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  #works .works-grid .portfolio-item {
+    position: relative; }
+    /* line 375, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #works .works-grid .portfolio-item img {
+      width: 100%; }
+    /* line 379, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #works .works-grid .portfolio-item figcaption {
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #ffffff;
+      top: 0;
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      place-content: center;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in-out; }
+    /* line 393, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    #works .works-grid .portfolio-item:hover figcaption {
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: transform 250ms ease-in-out; }
+
+/* line 403, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#contact-me .contact-me-inner {
+  background-color: rgba(0, 40, 132, 0.08); }
+
+/* line 406, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#contact-me form {
+  width: 100%; }
+
+/* line 409, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#contact-me .form-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px; }
+
+/* line 414, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#contact-me .form-grp {
+  border-bottom: 2px solid #002884;
+  margin-bottom: 2em;
+  position: relative; }
+  /* line 418, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  #contact-me .form-grp label {
+    position: absolute;
+    display: block;
+    top: 0;
+    transition: top 250ms ease-in-out;
+    color: #002884; }
+
+/* line 426, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#contact-me input,
+#contact-me textarea {
+  background: none;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 0.8em 0;
+  border: none;
+  margin-top: 1em; }
+
+/* line 435, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#contact-me input {
+  height: 30px; }
+
+/* line 439, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#contact-me input:focus + label,
+#contact-me textarea:focus + label {
+  color: #3f50b5;
+  top: -1em;
+  transition: top 250ms ease-in-out;
+  font-size: 0.8rem; }
+
+/* line 447, ../../../PROJECTS/official-portfolio/scss/main.scss */
+#contact-me .submit-btn {
+  background-color: #002884;
+  transition: background-color 250ms ease;
+  padding: 0.5em 1.7em;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+  cursor: pointer; }
+  /* line 456, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  #contact-me .submit-btn:hover {
+    background-color: #3f50b5;
+    transition: background-color 250ms ease; }
+  /* line 460, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  #contact-me .submit-btn:focus {
+    box-shadow: inset 0 0 0 3px white;
+    border: 1px solid #002884;
+    transition: box-shadow 250ms ease;
+    transition: border 250ms ease; }
+
+/* line 469, ../../../PROJECTS/official-portfolio/scss/main.scss */
+footer {
+  background-color: #002884;
+  color: #ffffff;
+  margin-top: 3em;
+  padding: 1.2em 0; }
+
+@media (min-width: 900px) {
+  /* line 477, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  body {
+    font-size: 16px; }
+  /* line 482, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .main-nav {
+    display: grid;
+    grid-template-areas: "brand-logo nav-tab nav-tab nav-tab"; }
+  /* line 487, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .brand-logo {
+    grid-area: brand-logo;
+    display: grid;
+    justify-content: start;
+    align-items: center; }
+  /* line 494, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .nav-tab {
+    grid-area: nav-tab;
+    background-color: unset;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end; }
+    /* line 503, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    .nav-tab .nav-list {
+      margin-left: 2em; }
+    /* line 507, ../../../PROJECTS/official-portfolio/scss/main.scss */
+    .nav-tab .nav-link {
+      color: #002884; }
+  /* line 512, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .menu-icon {
+    display: none; }
+  /* line 517, ../../../PROJECTS/official-portfolio/scss/main.scss */
+  .hero .intro {
+    font-size: 2rem; } }
+
+/*# sourceMappingURL=main.css.map */
