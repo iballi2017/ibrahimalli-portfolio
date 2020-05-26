@@ -32,12 +32,16 @@ function myFunction() {
 }
 
 
+// hero texts effects
+
+
+
 // main navigation links activation
 // observing main navigation active links
 const pageSections = document.querySelectorAll(".pageSection")
 const sectionOption = {
-    thresholds: 1,
-    rootMargin: "-100px"
+    // thresholds: 1,
+    rootMargin: "0px 0px -150px 0px"
 }
 
 
@@ -46,6 +50,17 @@ const pageSectionObserver = new IntersectionObserver((entries, pageSectionObserv
         if (!entry.isIntersecting) {
             return;
         }
+        // if (entry.target.id === "hero") {
+        //     const navLists = document.querySelectorAll(".nav-list")
+        //     navLists.forEach(link => {
+        //         if (link.id === "hero") {
+        //             for (let sibling of link.parentNode.children) {
+        //                 link.classList.add("active")
+        //                 if (sibling !== this) sibling.classList.remove('active');
+        //             }
+        //         }
+        //     })
+        // }
         if (entry.target.id === "about-section") {
             const navLists = document.querySelectorAll(".nav-list")
             navLists.forEach(link => {
