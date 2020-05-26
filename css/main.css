@@ -164,8 +164,10 @@ p {
     position: relative; }
     .hero .hero-inner .headline {
       font-weight: 500; }
+      .hero .hero-inner .headline .name-intro {
+        font-size: 2.5rem; }
       .hero .hero-inner .headline .todo {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         font-weight: bold; }
     .hero .hero-inner .social-icons {
       position: absolute;

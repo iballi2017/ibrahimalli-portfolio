@@ -199,8 +199,12 @@ p {
         .headline {
             font-weight: 500;
 
+            .name-intro {
+                font-size: 2.5rem;
+            }
+
             .todo {
-                font-size: 3.5rem;
+                font-size: 4.5rem;
                 font-weight: bold;
             }
         }
