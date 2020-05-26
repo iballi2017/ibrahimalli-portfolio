@@ -33,6 +33,7 @@ function myFunction() {
 
 
 // main navigation links activation
+// observing main navigation active links
 const pageSections = document.querySelectorAll(".pageSection")
 const sectionOption = {
     thresholds: 1,

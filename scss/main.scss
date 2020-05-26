@@ -6,11 +6,6 @@ $tint-clr: #757ce8;
 $shade: #3f50b5;
 $fontFamily: "Roboto", sans-serif;
 
-// test
-.red {
-    background-color: red;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +26,6 @@ html {
 body {
     // background-color: red;
     font-family: $fontFamily;
-    font-size: 14px;
 }
 
 /*
@@ -158,7 +152,9 @@ p {
 }
 
 .call-to-action {
-    font-weight: bolder;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 4px;
     border-radius: 3px;
 
     background-color: none;
@@ -197,31 +193,16 @@ p {
         height: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
-        text-align: center;
         position: relative;
-        letter-spacing: 2px;
-        .hero-image-container {
-            width: 100px;
+        .headline {
+            font-weight: 500;
 
-            img {
-                width: 100%;
-                clip-path: circle(50% at 50% 50%);
+            .todo {
+                font-size: 3.5rem;
+                font-weight: bold;
             }
-        }
-        .user-name {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        .designation {
-            margin-bottom: 1.5em;
-        }
-        .intro {
-            line-height: 1.5;
-            width: 90%;
-            margin: 0 auto;
-            font-size: 1.2rem;
         }
 
         .social-icons {
@@ -268,10 +249,10 @@ p {
     align-items: center;
 }
 
-// .nav-container {
-//     grid-area: nav-tab;
-//     height: 0;
-// }
+.menu-btn-icon {
+    transform: rotate(0deg);
+    transition: transform 250m ease-in-out;
+}
 
 .nav-tab {
     grid-area: nav-tab;
@@ -328,6 +309,7 @@ p {
 
     .tool-icon {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         list-style: none;
         li {
@@ -404,6 +386,11 @@ p {
 }
 
 #contact-me {
+    .contact-details {
+        line-height: 2;
+        font-size: 1.3rem;
+        margin-bottom: 1em;
+    }
     .contact-me-inner {
         background-color: rgba(0, 40, 132, 0.08);
     }
@@ -484,12 +471,20 @@ footer {
     padding: 1.2em 0;
 }
 
-@media (min-width: 900px) {
-    body {
-        font-size: 16px;
-        // background-color: red;
+@media (max-width: 370px) {
+    h1 {
+        font-size: 1.6rem;
     }
+    #contact-me {
+        .form-flex {
+            display: grid;
+            grid-template-columns: unset;
+            grid-gap: 20px;
+        }
+    }
+}
 
+@media (min-width: 900px) {
     .main-nav {
         display: grid;
         grid-template-areas: "brand-logo nav-tab nav-tab nav-tab";
@@ -525,8 +520,15 @@ footer {
     }
 
     .hero {
-        .intro {
-            font-size: 2rem;
+        .hero-inner {
+            .headline {
+                font-size: 3rem;
+                font-weight: bold;
+
+                .todo {
+                    font-size: 6rem;
+                }
+            }
         }
     }
 }
