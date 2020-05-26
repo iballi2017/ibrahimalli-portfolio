@@ -188,7 +188,10 @@ p {
       right: 0;
       bottom: 0;
       color: rgba(255, 255, 255, 0.2);
-      animation: chevronmove 1s infinite; }
+      animation: chevronmove 1s infinite;
+      -webkit-animation: chevronmove 1s infinite;
+      -moz-animation: chevronmove 1s infinite;
+      -o-animation: chevronmove 1s infinite; }
 
 @keyframes chevronmove {
   from {
