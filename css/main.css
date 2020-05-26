@@ -183,6 +183,18 @@ p {
         color: #757ce8; }
         .hero .hero-inner .social-icons a:hover, .hero .hero-inner .social-icons a:focus {
           color: #3f50b5; }
+    .hero .hero-inner .fa-chevron-down {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      color: rgba(255, 255, 255, 0.2);
+      animation: chevronmove 1s infinite; }
+
+@keyframes chevronmove {
+  from {
+    bottom: 0px; }
+  to {
+    bottom: 10px; } }
 
 #main-navigation {
   background-color: #ffffff;

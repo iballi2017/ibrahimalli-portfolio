@@ -228,6 +228,23 @@ p {
                 }
             }
         }
+
+        .fa-chevron-down {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: rgba(255, 255, 255, 0.2);
+            animation: chevronmove 1s infinite;
+        }
+
+        @keyframes chevronmove {
+            from {
+                bottom: 0px;
+            }
+            to {
+                bottom: 10px;
+            }
+        }
     }
 }
 
