@@ -14,6 +14,7 @@ $(document).ready(function () {
                 $(this).css({
                     "background-color": "unset",
                 })
+
             } else {
                 $(this).siblings().css({
                     "top": "unset",
@@ -22,6 +23,7 @@ $(document).ready(function () {
                 })
             }
         });
+
     });
 })
 
