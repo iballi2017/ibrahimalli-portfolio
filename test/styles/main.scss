@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+:root {
+    --dark: #151719;
+    --light: rgba(230, 230, 230, 0.9);
+    --lighter: rgba(100, 100, 100, 0.3);
+    --logo_font_family: "Dancing Script", cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 17px;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.section_separator {
+    opacity: 0;
+}
+
+p {
+    line-height: 1.7;
+}
+
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: var(--dark);
+    left: -300px;
+    transition: all 300ms ease-in-out;
+    z-index: 100;
+
+    ul {
+        margin-top: 3em;
+    }
+}
+#sidebar.open_nav {
+    left: 0;
+    transition: all 300ms ease-in-out;
+}
+#sidebar ul li {
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--lighter);
+    padding-left: 1em;
+}
+#sidebar a {
+    color: var(--light);
+    opacity: 0.6;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
+}
+.brand_logo,
+.brand_logo_alt {
+    font-family: var(--logo_font_family);
+    margin: 10px;
+}
+.brand_logo {
+    color: var(--light);
+    opacity: 0.7;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.brand_logo_alt {
+    display: block;
+}
+
+#nav_close_btn {
+    transform: rotate(45deg);
+    float: right;
+    display: block;
+    margin: 10px;
+}
+#nav_menu_btn,
+#nav_close_btn {
+    color: var(--light);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.nav_btn_container {
+    position: fixed;
+    background-color: var(--dark);
+    width: 100%;
+    z-index: 10;
+}
+.nav_btn_container_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em;
+
+    span {
+        display: flex;
+        align-items: center;
+    }
+
+    .social_icons {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        li {
+            margin-left: 1em;
+            a {
+                text-decoration: none;
+                color: var(--light);
+                opacity: 0.7;
+                transition: all 300ms ease-in-out;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+main .hero {
+    background-color: #202020;
+    background-image: url(../assets/images/hal-gatewood-Pr578ZCufII-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    height: 100vh;
+}
+
+.hero .hero_inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: var(--light);
+}
+.hero .hero_inner h2 {
+    font-size: 3rem;
+}
+
+.hero .hero_link_btn {
+    background-color: var(--light);
+    text-decoration: none;
+    padding: 0.7em 2em;
+    margin: 3px 0;
+    border-radius: 3px;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+    color: var(--lighter);
+    animation: chevronmove 1s infinite;
+    -webkit-animation: chevronmove 1s infinite;
+    -moz-animation: chevronmove 1s infinite;
+    -o-animation: chevronmove 1s infinite;
+}
+@keyframes chevronmove {
+    from {
+        bottom: 0px;
+    }
+    to {
+        bottom: 10px;
+    }
+}
+.non_flow_in {
+    transform: scaleY(0);
+    transition: all 600ms ease-in-out;
+}
+
+.flow_in {
+    transform: scaleY(1);
+    transition: all 600ms ease-in-out;
+}
+
+.section_title {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.responsibilities {
+    list-style: none;
+    li {
+        margin-bottom: 0.7em;
+        &:before {
+            content: "\f101";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            padding: 0.3em;
+        }
+    }
+}
+
+#works {
+    .work_grid {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+        figure {
+            position: relative;
+
+            figcaption {
+                background-color: rgba(0, 0, 0, 0.9);
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                right: 0;
+                left: 0;
+                transform: scale(0);
+                transition: all 300ms ease-in-out;
+                display: grid;
+                place-content: center;
+                justify-items: center;
+                color: var(--light);
+            }
+            img {
+                width: 100%;
+                height: 300px;
+            }
+
+            &:hover figcaption {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+#contact {
+    .form_area {
+        background-color: var(--lighter);
+        padding: 1em;
+        margin-top: 2em;
+    }
+    .form_grp {
+        margin-bottom: 1em;
+        border-bottom: 1px solid var(--dark);
+        position: relative;
+    }
+    label {
+        display: block;
+        bottom: 0;
+        position: absolute;
+        color: rgba(66, 65, 65, 0.9);
+        font-size: 1rem;
+        transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+    }
+    input:focus + label,
+    textarea:focus + label {
+        transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        font-size: 0.7rem;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 0;
+        border: none;
+        background-color: unset;
+        font-size: 1rem;
+        padding-top: 20px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+    .form_btn {
+        padding: 0.4em 1em;
+        cursor: pointer;
+        &::after {
+            content: "\f1d8";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-left: 0.2em;
+        }
+    }
+}
+
+footer {
+    margin-top: 2em;
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.3em 0;
+
+    ul {
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+
+        li {
+            + li {
+                margin-left: 2em;
+                a {
+                    color: var(--lighter);
+                    transition: all 300ms ease-in-out;
+                    &:hover {
+                        color: var(--light);
+                    }
+                }
+            }
+            &.active > a {
+                color: var(--light);
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    body {
+        font-size: 23px;
+    }
+    .wrapper {
+        width: 90%;
+    }
+    .section_title {
+        font-size: 2.4rem;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+    }
+    .form_row {
+        display: flex;
+        justify-content: space-between;
+        .form_grp:nth-child(odd) {
+            margin-right: 20px;
+        }
+        .form_grp {
+            width: 100%;
+        }
+        label,
+        input {
+            display: inline-flex;
+        }
+    }
+
+    .hero {
+        .hero_inner {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 5.5rem;
+            }
+            .hero_link_btn {
+                padding: 0.5em 2em;
+                transition: all 300ms ease-in-out;
+                &:hover {
+                    background-color: #fff;
+                    transition: all 300ms ease-in-out;
+                }
+            }
+        }
+    }
+    #contact {
+        form {
+            .form_btn {
+                font-size: 1rem;
+                padding: 0.8em 4em;
+            }
+        }
+    }
+}

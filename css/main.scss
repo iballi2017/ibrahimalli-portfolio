@@ -114,6 +114,10 @@ li {
     box-shadow: 2px 2px 7px $tint-clr;
 }
 
+.border-bottom {
+    border: 1px solid #ccc;
+}
+
 .nav-list.active > .nav-link::after {
     transform: scaleX(1);
 }

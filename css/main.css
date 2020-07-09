@@ -89,6 +89,9 @@ li {
 .shadow {
   box-shadow: 2px 2px 7px #757ce8; }
 
+.border-bottom {
+  border: 1px solid #ccc; }
+
 .nav-list.active > .nav-link::after {
   transform: scaleX(1); }
 
@@ -192,13 +195,11 @@ p {
       -webkit-animation: chevronmove 1s infinite;
       -moz-animation: chevronmove 1s infinite;
       -o-animation: chevronmove 1s infinite; }
-
 @keyframes chevronmove {
   from {
     bottom: 0px; }
   to {
     bottom: 10px; } }
-
 #main-navigation {
   background-color: #ffffff;
   z-index: 3; }
@@ -314,18 +315,14 @@ p {
   line-height: 2;
   font-size: 1.3rem;
   margin-bottom: 1em; }
-
 #contact-me .contact-me-inner {
   background-color: rgba(0, 40, 132, 0.08); }
-
 #contact-me form {
   width: 100%; }
-
 #contact-me .form-flex {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px; }
-
 #contact-me .form-grp {
   border-bottom: 2px solid #002884;
   margin-bottom: 2em;
@@ -336,7 +333,6 @@ p {
     top: 0;
     transition: top 250ms ease-in-out;
     color: #002884; }
-
 #contact-me input,
 #contact-me textarea {
   background: none;
@@ -345,23 +341,18 @@ p {
   padding: 0.8em 0;
   border: none;
   margin-top: 1em; }
-
 #contact-me input {
   height: 30px; }
-
 #contact-me input:focus + label,
 #contact-me textarea:focus + label {
   color: #3f50b5;
   top: -1em;
   transition: top 250ms ease-in-out;
   font-size: 0.8rem; }
-
 #contact-me .submit-btn {
   background-color: #002884; }
-
 #contact-me .submit-btn-alt {
   background-color: #757ce8; }
-
 #contact-me .submit-btn,
 #contact-me .submit-btn-alt {
   transition: background-color 250ms ease;
@@ -390,20 +381,22 @@ footer {
 @media (max-width: 370px) {
   h1 {
     font-size: 1.6rem; }
+
   #contact-me .form-flex {
     display: grid;
     grid-template-columns: unset;
     grid-gap: 20px; } }
-
 @media (min-width: 900px) {
   .main-nav {
     display: grid;
     grid-template-areas: "brand-logo nav-tab nav-tab nav-tab"; }
+
   .brand-logo {
     grid-area: brand-logo;
     display: grid;
     justify-content: start;
     align-items: center; }
+
   .nav-tab {
     grid-area: nav-tab;
     background-color: unset;
@@ -415,10 +408,14 @@ footer {
       margin-left: 2em; }
     .nav-tab .nav-link {
       color: #002884; }
+
   .menu-icon {
     display: none; }
+
   .hero .hero-inner .headline {
     font-size: 3rem;
     font-weight: bold; }
     .hero .hero-inner .headline .todo {
       font-size: 6rem; } }
+
+/*# sourceMappingURL=main.css.map */
