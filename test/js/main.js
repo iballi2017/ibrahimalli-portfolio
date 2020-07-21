@@ -22,6 +22,10 @@ $(document).ready(function () {
                     "transition": "all 300ms ease-in-out"
                 })
             }
+
+            if ($(this).focus()) {
+                alert("hjsbjaJ")
+            }
         });
 
     });
